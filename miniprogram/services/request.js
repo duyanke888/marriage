@@ -16,16 +16,10 @@ const api = (url, data = {}) => {
         data
       }
     })
-    .catch(err => {
-      map[url] = false
-      wx.hideLoading()
-      hint((err && err.errorMessage) || '网络错误啦 QoQ!')
-      return Promise.reject(err)
-    })
     .then(({ result }) => {
       map[url] = false
       wx.hideLoading()
-
+      
       const { code, data, msg } = result
       // 0、成功 1、失败 2、成功但是要显示msg
       if (code !== 0) {
@@ -36,6 +30,12 @@ const api = (url, data = {}) => {
       } else {
         return data
       }
+    })
+    .catch(err => {
+      map[url] = false
+      wx.hideLoading()
+      hint((err && err.errorMessage) || '网络错误啦 QoQ!')
+      return Promise.reject(err)
     })
 }
 

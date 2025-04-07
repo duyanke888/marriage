@@ -1,6 +1,6 @@
 <view class="container {{$style}}" bindtap="$showHeart">
   <view class="ghost" bindtap="ghostAction"></view>
-
+  <view class="title" bindtap="ghostAction" >设置</view>
   <view class="container" wx:if="{{$ready && $pageReady}}">
     <scroll-view class="list-wrap {{(isLayerShow || isAttendShow) ? 'blur' : ''}}" scroll-y style="height:{{height}}px" bindscrolltolower="scrollToLower">
       <!-- 如果以padding的形式 会导致box-shadow被挡住 -->

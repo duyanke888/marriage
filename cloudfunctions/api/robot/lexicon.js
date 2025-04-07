@@ -1,9 +1,9 @@
 /*
  * @Description
  * @Version: 1.0
- * @Autor: 王兴欣
+ * @Autor: 杜衍珂
  * @Date: 2020-03-27 20:58:11
- * @LastEditors: 王兴欣
+ * @LastEditors: 杜衍珂
  * @LastEditTime: 2020-04-10 09:59:20
  */
 const { keyword, probability } = require('../static/config')

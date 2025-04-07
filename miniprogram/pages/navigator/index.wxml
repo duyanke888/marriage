@@ -8,6 +8,7 @@
       class="map border shadow100"
       longitude="{{$lon}}" 
       latitude="{{$lat}}"
+      scale="17"
       markers="{{$markers}}"
       bindmarkertap="markertap"
       show-location
