@@ -13,7 +13,8 @@
     "pages/setting_comment/index",
     "pages/setting_hotel/index",
     "pages/setting_attend/index",
-    "pages/setting_egg/index"
+    "pages/setting_egg/index",
+    "pages/hotel/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#242424",
@@ -44,6 +45,12 @@
         "pagePath": "pages/navigator/index",
         "iconPath": "/images/black-gold/icon3-1.png",
         "selectedIconPath": "/images/black-gold/icon3-2.png"
+      },
+      {
+        "text": "设置",
+        "pagePath": "pages/setting/index",
+        "iconPath": "/images/black-gold/icon2-1.png",
+        "selectedIconPath": "/images/black-gold/icon2-2.png"
       }
     ]
   },
